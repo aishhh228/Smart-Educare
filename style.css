@@ -1,0 +1,398 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #ff5757;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: normal;
+}
+
+/* title styles */
+.home-title span{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
+}
+
+.home-title span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(-101%);
+}
+
+.home-title span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(0);
+}
+
+.home-title span:nth-of-type(1)::before,
+.home-title span:nth-of-type(1)::after{
+    animation-delay: 1s;
+}
+
+.home-title span:nth-of-type(2)::before,
+.home-title span:nth-of-type(2)::after{
+    animation-delay: 1.5s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box1{
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 50px;
+  
+}
+.box2{
+    min-height: 100vh;
+    display: flex;
+    background-color:#9256AB ;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+  
+}
+/* 
+
+.intro-title{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    top: 105%;
+} */
+
+.intro-text{
+    width: 30%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s all ease-in-out;
+}
+.icon1{
+    position: absolute;
+    right: 100%; 
+    bottom: 93%;
+}
+.icon2{
+    position: absolute;
+    right: 100%; 
+    bottom: 80%;
+}
+.icon3{
+    position: absolute;
+    right: 100%; 
+    bottom: 68%;
+}
+.icon4{
+    position: absolute;
+    right: 100%; 
+    bottom: 35%;
+}
+.icon5{
+    position: absolute;
+    right: 100%; 
+    bottom: 23%;
+}
+.icon6{
+    position: absolute;
+    right: 100%; 
+    bottom: 5%;
+}
+.intro-appear{
+    top: 129%;
+    opacity: 1;
+    position: absolute;
+    right:60%;
+    color: white;
+    font-family: sans-serif;
+    transform: translateY(0px);
+}
+
+
+.study{
+    position: absolute ;
+    top: 125%;
+    right: 20%;
+   
+}
+
+.section-a{
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+  
+}
+
+.title{
+    position: absolute;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    top: 208%;
+   
+}
+.goal-1{
+    position: absolute ;
+    width: 30%;
+    top: 220%;
+    right: 10%;
+ 
+}
+
+.img1{
+    position: absolute ;
+    height: 250px;
+    top: 216%;
+    right: 65%;
+   
+}
+
+.goal-2{
+    position: absolute ;
+    width: 30%;
+    top: 245%;
+    right: 60%;
+    
+}
+
+
+.img2{
+    position: absolute ;
+    height: 250px;
+    top: 170%;
+    right: 20%;
+   
+}
+
+.goal-3{
+    position: absolute ;
+    width: 30%;
+    top: 270%;
+    right: 10%;
+
+}
+
+.img3{
+    position: absolute ;
+    height: 250px;
+    bottom: 119%;
+    right: 40%;
+   
+}
+
+.section-b{
+    background-color:#585ad6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+  
+}
+
+.goal-4{
+    color: white;
+    position: absolute ;
+    top: 310%;
+    width: 30%;  
+    right: 60%;
+    
+}
+
+
+.goal-5{
+    color: white;
+    position: absolute ;
+    width: 30%;
+    top: 330%;
+    right: 10%;
+
+}
+.section-c{
+   
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+  
+}
+.goal-6{
+    position: absolute ;
+    width: 50%;
+    top: 430%;
+    right: 15%;
+    justify-content: center;
+    font-size: 25px;
+
+}
+
+.img4{
+    position: absolute ;
+    height: 320px;
+    right: 123%;
+    width: 150%;
+    height: 200%;
+   
+}
+.ml8 {
+    font-family: Questrial;
+    position: absolute;
+    color: whitesmoke;
+    top: 110%;
+    right: 79%;
+    font-weight: 900;
+    font-size: 4em;
+}
+  
+.ml8 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+  
+.ml8 .letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+}
+.ml9 {
+    font-family: Questrial;
+    position: absolute;
+    top: 208%;
+    font-weight: 900;
+    font-size: 4em;
+}
+  
+.ml9 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+  
+.ml9 .letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+}
+
+
+.ml10 {
+    font-family: Questrial;
+    position: absolute;
+    top: 410%;
+    font-weight: 900;
+    font-size: 4em;
+}
+  
+.ml10 .text-wrapper {
+    position: relative;
+  
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+  
+.ml10 .letter {
+    display: inline-block;
+    line-height: 1em;
+    
+    transform-origin: 0 0;
+}
+.button {
+    position: absolute;
+    top: 80%;
+    right: 38%;
+    
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 500px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+ }
+  
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.button:hover span {
+    padding-right: 25px;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+@keyframes a-ltr-after{
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(101%)}
+}
+
+@keyframes a-ltr-before{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(200%)}
+}
+
+
+
+
